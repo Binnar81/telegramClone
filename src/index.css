@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.dark .chat-bg {
+  background-color: black;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(150, 47, 191, 0.1),
+      rgba(221, 108, 185, 0.1)
+    ),
+    url("./assets/chat-bg-dark.jpg");
+  background-size: contain;
+}
+
+.chat-bg {
+  background-color: rgb(136, 184, 132, 0.3);
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(136, 184, 132, 0.302),
+      rgba(107, 165, 135, 0.3)
+    ),
+    url("./assets/chat-bg-light.jpg");
+  background-size: contain;
+}
